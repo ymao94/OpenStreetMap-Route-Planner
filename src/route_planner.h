@@ -15,6 +15,7 @@ class RoutePlanner {
     void AStarSearch();
 
     // The following methods have been made public so we can test them individually.
+    //static bool Compare(RouteModel::Node *node1, RouteModel::Node *node2);
     void AddNeighbors(RouteModel::Node *current_node);
     float CalculateHValue(RouteModel::Node const *node);
     std::vector<RouteModel::Node> ConstructFinalPath(RouteModel::Node *);
